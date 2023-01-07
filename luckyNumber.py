@@ -3,8 +3,9 @@ randNum=random.randint(1,10)
 
 def lucky_number(name):
     number = len(name) * randNum
-    print("Hello " + name + ". Your lucky number is " + str(number))
+    message = "Hello " + name + ". Your lucky number is " + str(number)
+    return message
     
-lucky_number("Joaquin")
-lucky_number("Shania")
-lucky_number("Emily")
+print(lucky_number("Joaquin"))
+print(lucky_number("Shania"))
+print(lucky_number("Emily"))
